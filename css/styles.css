@@ -1,0 +1,347 @@
+/* light green:#7ed56f; 
+ medium-green:#55c57a; 
+ darkgreen:#28b486; 
+*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,300;1,400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777;
+    overflow-x: hidden;
+}
+  /* different colors for */
+.bg-xy{
+  background-color:#1d1d1d;
+}
+.green-dark{
+  color:#28b486;
+}
+.midium-green{
+  color:#55c57a;
+}
+.light-green{
+  color:#7ed56f;
+}
+.darkor{
+  color: #1d1d1d;
+}
+.brder{
+  border-right: 1px solid #1d1d1d;
+}
+.green1{
+  color: #008000;
+}
+/*********************End color *********** ***************/
+
+.for-link{
+border-bottom: 1px solid #d1cccc;
+margin-bottom: 40px;
+}
+.for-link:hover{
+  border-bottom: 1px solid #1d1d1d;
+}
+.for-signup{
+  border-bottom: 1px solid #1d1d1d;
+  margin-bottom: 40px;
+  content: "";
+  margin-top:40px;
+  }
+  .to-end{
+    margin-left: 30%;
+  }
+.line-h{
+  line-height: 52px;
+  font-weight: 500;
+  font-size: 44px;
+  font-family: UberMove, UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/*********************Button Custom css *********** ***************/
+.darkor1{
+  background-color:rgb(240, 240, 240);
+}
+.darkor1:hover{
+  background-color:rgb(214, 208, 208);
+}
+.darkor11:hover{
+
+}
+.btn1-rounded{
+    border-radius: 3rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+}
+.btn1-rounded:hover{
+    background-color: rgb(42, 40, 40);
+}
+
+/*********************End Button CSS *********** ***************/
+.bg-image{
+  background-image: url(../img/taxi-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+.uber{
+	font-size: 30px;
+	color: white;
+}
+.border-bottom-link{
+  border-bottom:4px solid #ffffff;
+  padding-top: 20px;
+  content: "";
+  width: 100px;
+  margin-bottom: -18px;
+
+}
+
+.border-bottom-link:hover{
+  border-bottom:4px solid #1d1d1d;
+  
+}
+
+
+
+.navbar-toggler{
+    background-color: #fff;
+}
+.destination-section{
+  background-image: linear-gradient(to bottom,rgba(126, 213, 111, 0.8), rgba(29, 29, 29, 0.8)),url(../img/gbeen.jpg);
+  min-height:90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  color: #fff;
+}
+.carousel-indicators{
+  color: #fff;
+}
+
+.discover{
+  display: block;
+  font-size: 38px;
+  color: #fff;
+  text-shadow: 0px 3px 5px rgb(0, 109, 42);
+  letter-spacing: 9px;
+  text-transform: uppercase;
+}
+
+.boxshadow-parag{
+  
+  font-weight: 300;
+  max-width: 580px;
+  font-size: 36;
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 3px 5px rgb(0, 0, 0);
+}
+
+/* Button Animation Coding */
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:100");
+
+.coolBeans {
+  border: 2px solid currentColor;
+  border-radius: 3rem;
+  color: #ff0;
+  font-family: roboto;
+
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  transition: 0.2s transform ease-in-out;
+  will-change: transform;
+  z-index: 0;
+}
+.coolBeans::after {
+  background-color: #7ed56f;;
+  border-radius: 3rem;
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-100%, 0) rotate(10deg);
+  transform-origin: top left;
+  transition: 0.2s transform ease-out;
+  will-change: transform;
+  z-index: -1;
+}
+.coolBeans:hover::after {
+  transform: translate(0, 0);
+}
+.coolBeans:hover {
+  border: 2px solid transparent;
+  color: #ffffff;
+  transform: scale(1.05);
+  will-change: transform;
+}
+
+
+/* Button effects  */
+
+.hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(22, 119, 47, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+}
+.hvr-float:hover,
+.hvr-float:focus,
+.hvr-float:active {
+  transform: translateY(-8px);
+  -webkit-transform: translateY(-8px);
+  -moz-transform: translateY(-8px);
+  -ms-transform: translateY(-8px);
+  -o-transform: translateY(-8px);
+}
+
+/* Button animation  */
+.hbtn {
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    overflow: hidden;
+    padding: 8px 20px;
+    margin: 0px 3px 6px;
+    text-align: center;
+    border: 2px solid rgb(255, 255, 255);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    white-space: nowrap;
+    z-index: 0;
+} 
+
+
+.hbtn i {
+    padding-right: 8px;
+} 
+
+
+.hb-fill-bottom-rev::before {
+    position: absolute;
+    content: "";
+    background: rgb(255, 255, 255);
+    transition-duration: 0.3s;
+    z-index: -1;
+    inset: 0px auto auto 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+} 
+
+
+.hb-fill-bottom-rev:hover::before {
+    width: 100%;
+    height: 0px;
+    opacity: 1;
+} 
+
+
+.hb-fill-bottom-rev:hover {
+    background: transparent;
+    color: rgb(255, 255, 255);
+    transition: color 0.3s ease 0s, background 0s ease 0s;
+} 
+
+
+.hpill {
+    border-radius: 50px;
+} 
+
+
+
+
+
+.bg-about{
+  background-image: url(../img/About-us-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.bg-man{
+  background-image: url(../img/uber-man.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.lightee{
+  background-color: #fff;
+}
+.d-none-1{
+  display: none;
+}
+.icon1{
+  margin-top:-15px;
+  width: 100px;
+  height: auto;
+  background-color: #fff;
+}
+.bg11{
+  background-color: #fff;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+/* Box Shadow */
+.shadow-drop-center {
+	-webkit-animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2021-2-19 11:35:45
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation shadow-drop-center
+ * ----------------------------------------
+ */
+ @-webkit-keyframes shadow-drop-center {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+@keyframes shadow-drop-center {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}
